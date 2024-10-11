@@ -1,0 +1,267 @@
+/*start Global Rules*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Work Sans", sans-serif;
+  background-color: #bbdefb;
+  margin: 0;
+}
+/* End Global Rules*/
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .container{
+      width: 100%;
+  } 
+}
+@media (min-width: 992px) {
+  .container{
+      width: 100%;
+  } 
+}
+@media (min-width: 1200px) {
+  .container{
+      width: 100%;
+  } 
+}
+a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color:white;
+    display: inline-block;
+    margin-top: 20px;
+}
+a:hover{
+  background-color: #4cc9f0;
+}
+/*Navbar*/
+nav{
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;;
+  z-index: 1000;
+  width:100%;
+ /* padding: 10px;*/
+  display: flex ;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 201);
+  align-items: center;
+  margin:0;
+   background-color: #bbdefb;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+li{
+  margin: 0 15px;
+}*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: #130606;
+  padding: 10px 20px;
+  margin-top: 0px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.content{
+  margin-top: 60px;
+  margin-left: 0px;
+  margin-right: 0px;
+
+}
+.navbar-left{
+  margin-right: 55%;
+}
+.navbar-left .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #130606;
+  text-decoration: none;
+}
+
+.navbar-center .nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar-center .nav-links li {
+  margin-right: 1rem;
+}
+
+.navbar-center .nav-links a {
+  color: #130606;
+  text-decoration: none;
+}
+/*carousel-slide*/
+.carousel-container {
+  /*position: relative;*/
+  width: 100%; 
+  height: 500px; 
+  margin-top: 0px;
+  margin-bottom: 12px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container-carousel {
+  overflow: hidden;
+  height: 100%;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  /*transform: translateY(-50%);*/
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+  /*padding: 10px;*/
+  border: none;
+  outline: none;
+}
+
+.carousel-prev {
+  left: 0;
+  z-index: 1000;
+  margin-top: auto;
+}
+
+.carousel-next {
+  right: 0;
+  z-index: 1000;
+  margin-top: auto;
+}
+
+.inner {
+  display: flex;
+  width: 100%; 
+  margin: 0;
+}
+
+.image {
+  width: 100%; 
+  height:100%;
+  flex-shrink: 0; 
+}
+
+.ImageCoursel {
+  height: 100%; 
+  width: 100%;
+  object-fit: cover; 
+  pointer-events: none; 
+}
+/* Cards */
+.Div-card{
+  width: 100%;
+  display: flex;
+    justify-content: center; 
+    align-items: center;        
+    margin-top: 0px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px; 
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.image-2 {
+  width: 310px; 
+  height:310px; 
+  overflow: hidden; 
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.image-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: transform 0.3s; 
+}
+
+.image-2 img:hover {
+  transform: scale(1.05); 
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+button{
+  background:none;
+  text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color:white;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: none;
+}
+button:hover{
+  background-color: #4cc9f0;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 30px; 
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 10px; 
+}
+
+.arrow-right {
+  right: 10px; 
+}
+
